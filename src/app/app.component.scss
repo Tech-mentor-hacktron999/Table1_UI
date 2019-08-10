@@ -3,7 +3,8 @@
     font-family: Raleway, sans-serif;
 }
 .AppLogo{
-    height:50px;
+    height: 30px;
+    margin: auto 0 auto 10px;
 }
 .AppBanner{
     width:100%;
@@ -14,21 +15,30 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 5px;
+    margin-bottom: 0;
     box-shadow: 0px 1px 2px grey;
     background:white;
 }
 .headerLabel{
     margin:5px auto;
+    font-size:1.5em;
 }
-.modern-button-red{
-    color:white;
-    background:red;
-    border:1px solid red;
+.modern-button{
     cursor:pointer;
     margin:10px;
     font-size:1em;
-    padding: 5px;
+    padding: 10px 20px;
+    border-radius: 2em;
+}
+.button-red{
+    color:white;
+    background:red;
+    border:1px solid red;
+}
+.button-green{
+    color:white;
+    background:teal;
+    border:1px solid teal;
 }
 .modern-button-red:hover{
     box-shadow: 1px 1px 1px grey;
@@ -50,11 +60,12 @@ ul.queueList li{
     margin: 3px;
     width: 90%;
     min-width: 300px;
-    background:lightgrey;
+    background:rgba(211, 211, 211, 0.5);
 }
 ul.queueList li h2{
     font-size: 1em;
     margin: 5px;
+    cursor: pointer;
 }
 .deleteQueue{
     float:right;
@@ -65,4 +76,9 @@ ul.queueList i{
 }
 .queueActions{
     text-align: center;
+}
+.queueMgrBody{
+    background: url(https://demos.creative-tim.com/rubik/assets/img/rubik_background3.jpg);
+    height: calc(100vh - 38px);
+    color:white;    
 }
