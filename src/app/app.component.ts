@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'hacktronUI';
-}
+  title = 'DBS HackTRON';
+  
+  products: any = 
+{
+"id":"1",
+"name":"Queue1"} 
+};

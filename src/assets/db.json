@@ -1,0 +1,28 @@
+{
+    "Queue": [
+        {
+            "id": 1,
+	        "name": "Queue# 1",
+	        "recordLimit": 10,
+	        "status": "Active",
+	        "createdAt": "",
+	        "updatedAt": ""
+        },
+        {
+            "id": 2,
+	        "name": "Queue# 2",
+	        "recordLimit": 10,
+	        "status": "Active",
+	        "createdAt": "",
+	        "updatedAt": ""
+        },
+        {
+            "id": 3,
+	        "name": "Queue# 3",
+	        "recordLimit": 10,
+	        "status": "Active",
+	        "createdAt": "",
+	        "updatedAt": ""
+        }    
+    ]
+    }
