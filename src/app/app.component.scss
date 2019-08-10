@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+.AppLogo{
+    height:50px;
+}
+.AppBanner{
+    width:100%;
+}
+.header{
+    position: sticky;
+    top:0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    box-shadow: 0px 1px 2px grey;
+    background:white;
+}
+.headerLabel{
+    margin:5px auto;
+}
+.modern-button-red{
+    color:white;
+    background:red;
+    border:1px solid red;
+    cursor:pointer;
+    margin:10px;
+    font-size:1em;
+    padding: 5px;
+}
+.modern-button-red:hover{
+    box-shadow: 1px 1px 1px grey;
+}
+.queueHeader{
+    text-align: center;
+}
+ul.queueList {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column;
+}
+ul.queueList li{
+    box-shadow: 0px 0px 3px grey;
+    padding: 5px;
+    margin: 3px;
+    width: 90%;
+    min-width: 300px;
+    background:lightgrey;
+}
+ul.queueList li h2{
+    font-size: 1em;
+    margin: 5px;
+}
+.deleteQueue{
+    float:right;
+    cursor: pointer;
+}
+ul.queueList i{
+    font-family:'Material Icons' !important;
+}
+.queueActions{
+    text-align: center;
+}

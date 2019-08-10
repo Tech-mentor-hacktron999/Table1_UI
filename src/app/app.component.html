@@ -1,23 +1,43 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
+<div class="header">
+  <img class="AppLogo" src="http://pluspng.com/img-png/logo-dbs-png-file-dbs-bank-logo-svg-1280.png"/>
+  <h1 class="headerLabel">
+    {{ title }}
   </h1>
-  <img width="300" alt="Angular Logo" src="https://media-fastly.hackerearth.com/media/hackathon/dbs-hacktron-full-stack-2019/images/40498c7477-DBS_Cover_Image.jpg">
 </div>
-<h2> Queue Manager </h2>
-<ul>
-  <li>
-    <h2><a>Queue #1 </a><a target="_blank" rel="noopener" href="">Remove</a></h2>
-  </li>
-  <li>
-    <h2><a>Queue #2 </a> <a target="_blank" rel="noopener" href="">Remove</a></h2>
-  </li>
-  <li>
-    <h2><a>Queue #3 </a><a target="_blank" rel="noopener" href="">Remove</a></h2>
-  </li>
-</ul>
+<div class="queueMgrBody">
+  <img class="AppBanner" width="300" alt="Angular Logo" src="https://media-fastly.hackerearth.com/media/hackathon/dbs-hacktron-full-stack-2019/images/40498c7477-DBS_Cover_Image.jpg">
+  <h2 class="queueHeader"> Queue Manager </h2>
+  <ul class="queueList">
+    <li>
+      <h2>
+        <a class="queueName">Queue 1 </a>
+        <i class="deleteQueue material-icons" title="Delete this Queue?">
+          delete
+        </i>
+      </h2>
+    </li>
+    <li>
+        <h2>
+          <a class="queueName">Queue 2 </a>
+          <i class="deleteQueue material-icons" title="Delete this Queue?">
+            delete
+          </i>
+        </h2>
+    </li>
+    <li>
+        <h2>
+            <a class="queueName">Queue 3 </a>
+            <i class="deleteQueue material-icons" title="Delete this Queue?">
+              delete
+            </i>
+          </h2>
+    </li>
+  </ul>
 
-<button>Add Queue</button>
-<button>Remove All</button>
+  <div class="queueActions">
+    <button class="modern-button-red">Add Queue</button>
+    <button class="modern-button-red">Remove All</button>
+  </div>
+</div>
 
