@@ -9,35 +9,40 @@
   <img class="AppBanner" width="300" alt="Angular Logo" src="https://media-fastly.hackerearth.com/media/hackathon/dbs-hacktron-full-stack-2019/images/40498c7477-DBS_Cover_Image.jpg">
   <h2 class="queueHeader"> Queue Manager </h2>
   <ul class="queueList">
-    <li class="animated fadeInDown">
-      <h2>
-        <a class="queueName">Queue 1 </a>
-        <i class="deleteQueue material-icons" title="Delete this Queue?">
-          delete
-        </i>
-      </h2>
-    </li>
-    <li class="animated fadeInDown" style="animation-delay: 0.25s;">
+    <li class="animated fadeInDown" style="animation-delay: 0s;" *ngFor='let queue of queues'>
         <h2>
-          <a class="queueName">Queue 2 </a>
-          <i class="deleteQueue material-icons" title="Delete this Queue?">
+          <a class="queueName">{{queue.name}} </a>
+          <i class="deleteQueue material-icons" #newName title="Delete this Queue?" (click)="deleteQ(queue.id)">
             delete
           </i>
+          <!-- <div class="queueMsg">
+            <ul>
+                <li class="animated fadeInDown" style="animation-delay: 0s;" *ngFor='let queue of queues'>
+                  <h5>
+                    <span class="queueName">{{queue.name}} </span>
+                    
+                  </h5>
+              </li>
+            </ul>
+          </div> -->
         </h2>
     </li>
-    <li class="animated fadeInDown" style="animation-delay: 0.5s;">
-        <h2>
-            <a class="queueName">Queue 3 </a>
-            <i class="deleteQueue material-icons" title="Delete this Queue?">
-              delete
-            </i>
-          </h2>
-    </li>
+    
   </ul>
 
   <div class="queueActions">
-    <button class="animated fadeIn modern-button button-green">Add Queue</button>
-    <button class="animated fadeIn modern-button button-red">Remove All</button>
+    <button (click)="show_addQueue()" class="animated fadeIn modern-button button-green">Add Queue</button>
+    <!-- <button class="animated fadeIn modern-button button-red">Remove All</button> -->
+  </div>
+
+  <div class="addQueuePop animated bounceInDown" [hidden] = "!showAddQueue">
+    <div class="popupFacade"></div>
+    <div class="popMainArea">
+      <i class="closeQueuePop material-icons" (click)="close_addQueue()">close</i>
+      <span class="newQueueNameLabel">Enter a new Queue Name</span>
+      <input type="text" name="newQueueName" #newName class="newQueueName" placeholder="Queue Name"/>
+      <button class="addNewQueue" (click)="addQName(newName.value)">Create Queue</button>
+    </div>
   </div>
 </div>
 

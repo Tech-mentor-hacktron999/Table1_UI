@@ -1,0 +1,22 @@
+<div style="text-align:center">
+  <h2> Queue Manager {{message}}</h2>
+</div>
+
+<div>
+   <h2>Queue 1</h2>
+    <p><input name="front queue"></p>
+    <p><input name="Rare queue"></p>
+  <button style="margin: 5px" class="button" (click)="myFunction()">Add Message</button>
+  <button style="margin: 5px" class="button">Fetch Message</button>
+  <button style="margin: 5px" class="button2">Delete Message</button>
+  <button style="margin: 5px" class="button2">Delete All Message</button>
+
+</div>
+
+<div *ngIf="message" [ngClass]="{ 'alert': message, 'alert-success': message.type === 'success', 'alert-danger': message.type === 'error' }">
+    {{message}}</div>
+
+
+
+
+

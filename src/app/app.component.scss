@@ -71,7 +71,7 @@ ul.queueList li h2{
     float:right;
     cursor: pointer;
 }
-ul.queueList i{
+i{
     font-family:'Material Icons' !important;
 }
 .queueActions{
@@ -81,4 +81,62 @@ ul.queueList i{
     background: url(https://demos.creative-tim.com/rubik/assets/img/rubik_background3.jpg);
     height: calc(100vh - 38px);
     color:white;    
+}
+.addQueuePop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.popMainArea {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: grey;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px grey;
+    width:350px;
+}
+.popupFacade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.50);
+}
+.newQueueName{
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    border: 0;
+    padding: 2px;
+    font-size: 1em;
+    background: #f3f3f3;
+}
+.newQueueNameLabel{
+    display: block;
+    text-align: center;
+    color:black;
+}
+.addNewQueue{
+    display: block;
+    cursor: pointer;
+    margin: 10px auto;
+    font-size: 0.9em;
+    padding: 8px 20px;
+    background: #fe0000;
+    color: white;
+    border: none;
+}
+i.closeQueuePop {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: black;
 }
